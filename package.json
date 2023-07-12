@@ -1,0 +1,24 @@
+{
+  "name": "prueba-qa-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolinaERios/prueba-QA-cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolinaERios/prueba-QA-cypress/issues"
+  },
+  "homepage": "https://github.com/CarolinaERios/prueba-QA-cypress#readme",
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.39.1",
+    "cypress": "^12.13.0"
+  }
+}
