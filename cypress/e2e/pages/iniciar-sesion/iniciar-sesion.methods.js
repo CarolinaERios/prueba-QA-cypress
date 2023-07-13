@@ -22,4 +22,8 @@ export class IniciarSesionMethods{
         Logger.subStep('Click en el botón de iniciar sesión')
         this.clickIniciarSesionButton()
     }
+
+    static clickRegistrarse(){
+        IniciarSesionElements.links.registrate.click()
+    }
 }

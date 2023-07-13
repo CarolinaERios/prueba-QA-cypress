@@ -22,7 +22,7 @@ export class RegistroMethods{
     }
 
     static marcarHeLeido(){
-        RegistroElements.checkbox.politicaPrivacidad.click({ multiple: true })
+        RegistroElements.checkbox.politicaPrivacidad.click({force: true})
     }
 
     static clickContinuarButton(){
@@ -41,5 +41,9 @@ export class RegistroMethods{
         this.marcarHeLeido();
         this.clickContinuarButton();
         this.clickContinuarButtonRegistrado();
+    }
+
+    static verificarBienvenido(){
+        RegistroElements.verificacion.verificar
     }
 }

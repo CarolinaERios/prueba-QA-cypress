@@ -58,5 +58,13 @@ export class RegistroElements{
         }
     }
 
+    static get verificacion(){
+        return{
+            get verificar(){
+                return cy.contains('p', 'Se ha iniciado la sesión. Bienvenid@ de vuelta!').should("be.visible")
+            }
+        }
+    }
+
     //cy.contains('p', 'Se ha iniciado la sesión. Bienvenid@ de vuelta!')
 }

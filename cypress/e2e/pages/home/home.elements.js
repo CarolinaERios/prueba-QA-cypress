@@ -1,3 +1,5 @@
+import { HomeData } from "./home.data"
+
 export class HomeElements{
     static get productosMenu(){
         return{
@@ -44,12 +46,20 @@ export class HomeElements{
     static get iconos(){
         return{
             get cuenta(){
-                return cy.get('button[name="Cuenta"]')
+                return cy.get('a[title="Cuenta"]')
             },
             get carrito(){
                 return cy.get('button[data-projection-id="20"]')
             }
 
+        }
+    }
+
+    static get visit(){
+        return{
+            get visitarPagina(){
+                return cy.visit(HomeData.url);
+            }
         }
     }
     

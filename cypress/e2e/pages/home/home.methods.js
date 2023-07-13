@@ -1,6 +1,10 @@
+import { HomeData } from "./home.data";
 import { HomeElements } from "./home.elements";
 
 export class HomeMethods{
+    static navegarASafeguru(){
+        HomeElements.visit.visitarPagina();
+    }
     static abrirMenu(){
         HomeElements.productosMenu.menu.click();
     }
