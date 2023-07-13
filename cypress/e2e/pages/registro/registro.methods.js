@@ -1,3 +1,4 @@
+import { HomeMethods } from "../home/home.methods";
 import { RegistroElements } from "./registro.elements";
 
 export class RegistroMethods{
@@ -44,7 +45,11 @@ export class RegistroMethods{
     }
 
     static verificarBienvenido(){
-        RegistroElements.verificacion.verificar
+        HomeMethods.verificarAlerta('Muchas gracias, . Tu cuenta en Safeguru ha sido activada.')
+    }
+
+    static verificarDatosIncorrectos(){
+        HomeMethods.verificarAlerta('Incluye un signo "@" en la dirección de correo electrónico.')
     }
 
     static generarStringsRandom(length = 8){

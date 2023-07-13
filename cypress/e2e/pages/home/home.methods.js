@@ -60,4 +60,10 @@ export class HomeMethods{
     static clickCarrito(){
         HomeElements.iconos.carrito.click()
     }
+
+    static verificarAlerta(mensajeEsperado){
+        cy.on('window:alert', (str) => {
+            expect(str).to.equal(`Muchas gracias, . Tu cuenta en Safeguru ha sido activada.`)
+        })
+    }
 }

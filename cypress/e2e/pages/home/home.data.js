@@ -5,7 +5,8 @@ export class HomeData{
 
     static get testSuites(){
         return{
-            registroYLogin: 'Registro y Login',
+            registro: 'Registro',
+            login: 'Login',
             catalogoYCompras: 'Catálogo y Compras'
         };
     }
