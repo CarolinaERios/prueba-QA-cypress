@@ -1,4 +1,5 @@
 import { Logger } from "../../util/logger";
+import { HomeMethods } from "../home/home.methods";
 import { IniciarSesionElements } from "./iniciar-sesion.elements";
 
 export class IniciarSesionMethods{
@@ -25,5 +26,9 @@ export class IniciarSesionMethods{
 
     static clickRegistrarse(){
         IniciarSesionElements.links.registrate.click()
+    }
+
+    static verificarInicioSesion(){
+        HomeMethods.verificarAlerta('Se ha iniciado la sesión. Bienvenid@ de vuelta!')
     }
 }

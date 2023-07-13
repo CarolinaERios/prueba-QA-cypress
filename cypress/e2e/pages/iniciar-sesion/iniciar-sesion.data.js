@@ -1,8 +1,8 @@
 export class IniciarSesionData{
-    static get invalidCredentials(){
+    static get usuarioValido(){
         return{
-            email: "prueba@gmail.com",
-            contraseña: "prueba@gmail.com"
+            email: "susana@yopmail.com",
+            contrasena: "susana@yopmail.com"
         }
     }
 }
