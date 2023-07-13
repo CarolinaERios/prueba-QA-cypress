@@ -1,3 +1,4 @@
+import { Logger } from "../../util/logger";
 import { IniciarSesionElements } from "./iniciar-sesion.elements";
 
 export class IniciarSesionMethods{
@@ -14,8 +15,11 @@ export class IniciarSesionMethods{
     }
 
     static iniciarSesion(email, contrasena){
+        Logger.subStep('Insertar email')
         this.insertEmail(email)
+        Logger.subStep('Insertar contraseña')
         this.insertContrasena(contrasena)
+        Logger.subStep('Click en el botón de iniciar sesión')
         this.clickIniciarSesionButton()
     }
 }
