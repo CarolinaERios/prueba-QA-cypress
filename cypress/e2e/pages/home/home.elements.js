@@ -40,6 +40,18 @@ export class HomeElements{
     static producto(nombreProducto){
         return cy.get('div.link-wrapper').should('contain', nombreProducto)
     }
+
+    static get iconos(){
+        return{
+            get cuenta(){
+                return cy.get('button[name="Cuenta"]')
+            },
+            get carrito(){
+                return cy.get('button[data-projection-id="20"]')
+            }
+
+        }
+    }
     
     
 }

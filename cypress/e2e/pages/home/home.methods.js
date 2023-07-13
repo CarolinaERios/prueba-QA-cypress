@@ -48,4 +48,12 @@ export class HomeMethods{
     static clickLinkProducto(nombreProducto){
         HomeElements.producto(nombreProducto).click({ multiple: true });
     }
+
+    static clickCuenta(){
+        HomeElements.iconos.cuenta.click()
+    }
+
+    static clickCarrito(){
+        HomeElements.iconos.carrito.click()
+    }
 }
