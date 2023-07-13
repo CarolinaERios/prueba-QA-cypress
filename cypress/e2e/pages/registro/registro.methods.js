@@ -46,4 +46,31 @@ export class RegistroMethods{
     static verificarBienvenido(){
         RegistroElements.verificacion.verificar
     }
+
+    static generarStringsRandom(length = 8){
+        let result = "";
+        const characters = "abcdefghijklmnopqrstuvwxyz0123456789";
+        const charactersLength = characters.length;
+        let counter = 0;
+        while(counter < length){
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            counter += 1;
+        }
+        return result;
+    }
+
+    static generarEmailRandom(){
+        const caracteres = 'abcdefghijklmnopqrstuvwxyz0123456789';
+        const longitud = 10;
+        let email = '';
+      
+        for (let i = 0; i < longitud; i++) {
+          const indice = Math.floor(Math.random() * caracteres.length);
+          email += caracteres.charAt(indice);
+        }
+      
+        email += '@example.com';
+      
+        return email;
+    }
 }

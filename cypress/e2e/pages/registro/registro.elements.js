@@ -53,7 +53,7 @@ export class RegistroElements{
                 return cy.get('button[type="submit"] div').eq(0)
             },
             get continuarRegistrado(){
-                return cy.get('div.sc-dDPqvT div')
+                return cy.get('div.sc-dDPqvT button')
             }
         }
     }
