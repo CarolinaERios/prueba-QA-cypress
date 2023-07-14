@@ -66,4 +66,8 @@ export class HomeMethods{
             expect(str).to.equal(`Muchas gracias, . Tu cuenta en Safeguru ha sido activada.`)
         })
     }
+
+    static verificacionListadoProductos(nombreProducto){
+        HomeElements.producto(nombreProducto).should('be.visible')
+    }
 }
