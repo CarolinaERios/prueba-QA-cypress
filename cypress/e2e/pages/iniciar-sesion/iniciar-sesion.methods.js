@@ -31,4 +31,8 @@ export class IniciarSesionMethods{
     static verificarInicioSesion(){
         HomeMethods.verificarAlerta('Se ha iniciado la sesión. Bienvenid@ de vuelta!')
     }
+
+    static verificarError(){
+        HomeMethods.verificarAlerta('No existe cuenta para este correo, porfavor comprueba tus datos e inténtalo de nuevo.')
+    }
 }

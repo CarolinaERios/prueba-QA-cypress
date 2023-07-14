@@ -5,4 +5,11 @@ export class IniciarSesionData{
             contrasena: "susana@yopmail.com"
         }
     }
+
+    static get usuarioNoVaido(){
+        return{
+            email: "pepito@gmail.com",
+            contrasena: "trucutru"
+        }
+    }
 }
