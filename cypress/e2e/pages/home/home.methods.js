@@ -58,7 +58,7 @@ export class HomeMethods{
     }
 
     static clickCarrito(){
-        HomeElements.iconos.carrito.click()
+        HomeElements.iconos.carrito.click({force: true})
     }
 
     static verificarAlerta(mensajeEsperado){

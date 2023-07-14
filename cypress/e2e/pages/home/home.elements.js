@@ -49,7 +49,7 @@ export class HomeElements{
                 return cy.get('a[title="Cuenta"]')
             },
             get carrito(){
-                return cy.get('button[data-projection-id="20"]')
+                return cy.get('button[aria-label="Bag"]')
             }
 
         }

@@ -22,28 +22,28 @@ export class TramitarCompraElements{
                 return cy.get('input[type="select"]').eq(0)
             },
             get nombreDireccion(){
-                return cy.get('div.full-width input')
+                return cy.get('label:contains("Nombre de dirección")')
             },
             get nombre(){
-                return cy.get('div.half-width input').eq(0)
+                return cy.get('label:contains("Nombre")')
             },
             get apellidos(){
-                return cy.get('input.ijFrhP').eq(1)
+                return cy.get('label:contains("Apellidos")')
             },
             get nombreYNumeroVia(){
-                return cy.get('input.ijFrhP').eq(1)
+                return cy.get('label:contains("Nombre y número de vía")')
             },
             get edificioPiso(){
-                return cy.get('input.ijFrhP').eq(1)
+                return cy.get('label:contains("Apartamento, suite, unidad, edificio o piso")')
             },
             get ciudad(){
-                return cy.get('input.ijFrhP').eq(1)
+                return cy.get('label:contains("Ciudad")')
             },
             get provincia(){
-                return cy.get('input.ijFrhP').eq(1)
+                return cy.get('label:contains("Provincia")')
             },
             get codigoPostal(){
-                return cy.get('input.ijFrhP').eq(1)
+                return cy.get('label:contains("Código postal")')
             },
             get telefono(){
                 return cy.get('input[type="phone"]')
@@ -66,13 +66,13 @@ export class TramitarCompraElements{
                 return cy.get('input[value="paypal"]')
             },
             get numeroTarjeta(){
-                return cy.get('input[name="cardnumber"]')
+                return cy.get('span[aria-label="Número de la tarjeta de crédito o débito"]')
             },
             get mesAño(){
-                return cy.get('input[name="exp-date"]')
+                return cy.get('span[aria-label="Fecha de caducidad de la tarjeta de crédito o débito"]')
             },
             get cvc(){
-                return cy.get('input[name="cvc"]')
+                return cy.get('span[aria-label="CVC/CVV de la tarjeta de crédito o débito"]')
             },
             get aceptarTerminos(){
                 return cy.get('div.linkColor span')

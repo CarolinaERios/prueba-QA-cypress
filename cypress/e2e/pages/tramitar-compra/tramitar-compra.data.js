@@ -12,9 +12,9 @@ export class TramitarCompraData{
             provincia: "Málaga",
             codigo: "29010",
             telefono: "789512547",
-            tarjeta: "4664 3832 4247 6058",
-            mesAño: "07/20",
-            cvc: "703"
+            tarjeta: "4664 3852 4247 6058",
+            mesAño: "05/28",
+            cvc: "743"
         }
     }
 }
